@@ -28,11 +28,10 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Streamlit Web Design
-
-
-header = st.container()
-description = st.container()
-
+st.set_page_config(
+    page_title="FitFlex",
+    page_icon="🏋️‍♂️",
+    )
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # This section is for prompt Example
@@ -276,12 +275,6 @@ def fitness_ai(text_input):
 # This section is for the process when the button is press
 
 def main():
-
-    st.set_page_config(
-        page_title="FitFlex",
-        page_icon="🏋️‍♂️",
-    )
-    
 
     header = st.container()
     description = st.container()

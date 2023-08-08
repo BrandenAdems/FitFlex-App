@@ -277,6 +277,12 @@ def fitness_ai(text_input):
 
 def main():
 
+    st.set_page_config(
+        page_title="FitFlex",
+        page_icon="🏋️‍♂️",
+    )
+    
+
     header = st.container()
     description = st.container()
 
